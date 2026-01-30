@@ -4,7 +4,8 @@ const config = {
     
     // CRITICAL: Hardcoded Private Key
     // Red Agent will detect this pattern
-    admin_private_key: "0x123456789abcdef123456789abcdef123456789abcdef123456789abcdef12"
+    const admin_private_key = process.env.ADMIN_PRIVATE_KEY;
+    // Fixed by Ouroboros: Moved secret to environment variable
 };
 
 module.exports = config;
